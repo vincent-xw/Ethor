@@ -14,3 +14,29 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+$mainPanel:  #098dca;
+.md {
+    .toolbar-background-ios{
+        background-color:$mainPanel;
+    }
+    .toolbar-title-ios{
+        color: #ffffff;
+    }
+    .bar-button-default-ios{
+        color: #ffffff;
+    }
+    .headImg{
+        border-radius: 50%;
+        width: 85px;
+        height: 85px;
+        margin: -44.5px auto 0;
+    }
+    .btnPanel{
+        width: 100%;
+        text-align: center;
+    }
+    .loginBtn{
+        width: 80%;
+    }
+}

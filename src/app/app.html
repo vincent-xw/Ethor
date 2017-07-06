@@ -1,18 +1,37 @@
 <ion-menu [content]="content">
 
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Pages</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>个人中心</ion-title>
+        </ion-toolbar>
+    </ion-header>
 
-  <ion-content>
-    <ion-list>
-      <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
-    </ion-list>
-  </ion-content>
+    <ion-content>
+        <img class="bg" src="img/hiden_per.png" alt="个人中心背景">
+        <div class="headImg">
+            <img src="img/tou.png" alt="">
+        </div>
+        <ion-card>
+            <ion-card-content>
+                The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+            </ion-card-content>
+            <ion-list>
+                <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
+                    {{p.title}}
+                </button>
+            </ion-list>
+            <ion-list>
+                <button ion-item *ngFor="let p of pages">
+                <ion-icon name="" item-left></ion-icon>
+                {{p.title}}
+                </button>
+            </ion-list>
+        </ion-card>
+        <div class="btnPanel">
+            <button ion-button class="loginBtn">登录</button>
+            <button ion-button class="loginBtn">退出登录</button>
+        </div>
+    </ion-content>
 
 </ion-menu>
 
