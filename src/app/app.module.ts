@@ -6,11 +6,11 @@ import { MyApp } from './app.component';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
+import { IndexPage } from '../pages/index-page/index-page';
+import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
-import { TabsTextPage } from '../pages/nav-tab/nav-tab';
 
 
 
@@ -20,11 +20,12 @@ import { TabsTextPage } from '../pages/nav-tab/nav-tab';
     HelloIonicPage,
     ItemDetailsPage,
     ListPage,
-    TabsTextPage
+    IndexPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -32,7 +33,8 @@ import { TabsTextPage } from '../pages/nav-tab/nav-tab';
     HelloIonicPage,
     ItemDetailsPage,
     ListPage,
-    TabsTextPage
+    IndexPage,
+    TabsPage
   ],
   providers: [
     StatusBar,

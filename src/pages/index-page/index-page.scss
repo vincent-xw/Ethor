@@ -1,0 +1,70 @@
+index-page{
+    .tabs{
+        margin-top: 9px;
+    }
+    ion-content {
+        background-color: #f2f2f2 !important;
+    }
+    .iocnMenu{
+        .menuList{
+            list-style: none;
+            font-size: 0;
+            background: #FFFFFF;
+            padding-left: 0;
+            box-sizing: border-box;
+            padding-bottom: 15px;
+            li{
+                font-size: 1.4rem;
+                display: inline-block;
+                width: 33.333%;
+                box-sizing: border-box;
+                padding: 15px;
+                img{
+                    width: 55px;
+                }
+                text-align: center;
+            }
+        }
+    }
+    .tabs{
+        background: #FFFFFF;
+        .tabsList{
+            list-style: none;
+            width: 100%;
+            font-size: 0;
+            padding-left: 0;
+            li{
+                display: inline-block;
+                width: 50%;
+                font-size: 1.4rem;
+                text-align: center;
+                padding: 15px 0;
+            }
+            li.active{
+                border-bottom: 3px solid #098DCA;
+                color: #098DCA;
+            }
+        }
+        .table{
+            width: 100%;
+            text-align: center;
+            vertical-align: middle;
+            thead{
+                tr{
+                    border-bottom: 1px solid #098dca;
+                    th{
+                        padding: 12px 0;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    border-bottom: 1px solid #d7d7d7;
+                    td{
+                        padding: 12px 0;
+                    }
+                }
+            }
+        }
+    }
+}

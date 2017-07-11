@@ -15,11 +15,11 @@
             <ion-card-content>
                 The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
             </ion-card-content>
-            <ion-list>
+            <!--<ion-list>
                 <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
                     {{p.title}}
                 </button>
-            </ion-list>
+            </ion-list>-->
             <ion-list>
                 <button ion-item *ngFor="let p of pages">
                 <ion-icon name="" item-left></ion-icon>
@@ -36,3 +36,4 @@
 </ion-menu>
 
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+

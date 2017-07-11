@@ -15,17 +15,8 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
-$mainPanel:  #098dca;
 .md {
-    .toolbar-background-ios{
-        background-color:$mainPanel;
-    }
-    .toolbar-title-ios{
-        color: #ffffff;
-    }
-    .bar-button-default-ios{
-        color: #ffffff;
-    }
+    
     .headImg{
         border-radius: 50%;
         width: 85px;

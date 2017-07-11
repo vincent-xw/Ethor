@@ -1,0 +1,108 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title></ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div class="slider">
+        <ion-slides loop="true" speed="300" autoplay="2000" pager (ionSlideAutoplayStop)="autoPlay()"> 
+            <ion-slide *ngFor="let slide of slidesArray">
+                <img src="{{slide.img}}" alt="">
+            </ion-slide>
+        </ion-slides>
+    </div>
+    <div class="iocnMenu" *ngIf="isLogin">
+        <ul class="menuList">
+            <li>
+                <div>
+                    <img src="img/key.png" alt="">
+                </div>
+                <div>
+                    <span>激活码管理</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/news.png" alt="">
+                </div>
+                <div>
+                    <span>新闻要闻</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/salary.png" alt="">
+                </div>
+                <div>
+                    <span>工资查询</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="tabs">
+        <div class="tabsGuoup"  *ngIf="!isLogin">
+            <ul class="tabsList">
+                <li [ngClass]="{'active':panel.news}" (click)="switchPanel('news')">新闻要闻</li>
+                <li [ngClass]="{'active':panel.data}" (click)="switchPanel('data')">海关数据统计</li>
+            </ul>
+            <div class="panel" *ngIf="panel.news">
+                <ion-list>
+                    <ion-item>
+                        <ion-thumbnail item-start>
+                        <img src="img/thumbnail-totoro.png">
+                        </ion-thumbnail>
+                        <h2>My Neighbor Totoro</h2>
+                        <p>Hayao Miyazaki • 1988</p>
+                        <button ion-button clear item-end>View</button>
+                    </ion-item>
+                </ion-list>
+            </div>
+            <div class="panel" *ngIf="panel.data">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>统计名称</th>
+                            <th>数值</th>
+                            <th>百分比</th>
+                            <th>占比</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>查验率</td>
+                            <td>111</td>
+                            <td>31%</td>
+                            <td>15.23%</td>
+                        </tr>
+                        <tr>
+                            <td>查验率</td>
+                            <td>111</td>
+                            <td>31%</td>
+                            <td>15.23%</td>
+                        </tr>
+                        <tr>
+                            <td>查验率</td>
+                            <td>111</td>
+                            <td>31%</td>
+                            <td>15.23%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="panel"></div>
+        </div>
+        <div class="tabsGuoup" *ngIf="isLogin">
+            <ul class="tabsList">
+                <li>通知公告</li>
+                <li>代办事项</li>
+            </ul>
+        </div>
+        
+    </div>
+    
+
+</ion-content>
