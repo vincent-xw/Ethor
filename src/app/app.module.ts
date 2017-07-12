@@ -3,8 +3,8 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
+import { applicationPage } from '../pages/application/application';
+import { personalPage } from '../pages/personal/personal';
 import { ListPage } from '../pages/list/list';
 import { IndexPage } from '../pages/index-page/index-page';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -17,8 +17,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
-    HelloIonicPage,
-    ItemDetailsPage,
+    applicationPage,
+    personalPage,
     ListPage,
     IndexPage,
     TabsPage
@@ -30,8 +30,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HelloIonicPage,
-    ItemDetailsPage,
+    applicationPage,
+    personalPage,
     ListPage,
     IndexPage,
     TabsPage

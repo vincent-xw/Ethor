@@ -1,8 +1,8 @@
 import { Component,Input } from '@angular/core';
 
 import { IndexPage } from '../index-page/index-page';
-// import { HelloIonicPage } from '../hello-ionic/hello-ionic';
-// import { AboutPage } from '../about/about';
+import { personalPage } from '../personal/personal';
+import { applicationPage } from '../application/application';
 // import { ContactPage } from '../contact/contact';
 
 
@@ -11,18 +11,18 @@ import { IndexPage } from '../index-page/index-page';
 })
 export class TabsPage {
 
-  @Input() isLogin:boolean;
+  // @Input() isLogin:boolean;
+  isLogin = true;
 
   // this tells the tabs component which Pages
   // should be each tab's root Page
   tab1Root: any = IndexPage;
-  tab2Root: any = IndexPage;
-  tab3Root: any = IndexPage;
+  tab2Root: any = applicationPage;
+  tab3Root: any = personalPage;
 
 
 
   constructor() {
 
-    console.log(this.isLogin);
   }
 }

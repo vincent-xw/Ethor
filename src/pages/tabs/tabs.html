@@ -1,5 +1,5 @@
 <ion-tabs>
   <ion-tab [root]="tab1Root" tabTitle="{{isLogin}}" tabIcon="home" ></ion-tab>
-  <ion-tab [root]="tab2Root" tabTitle="应用" tabIcon="information-circle" *ngIf="isLogin"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="应用" tabIcon="information-circle" show="{{isLogin}}"></ion-tab>
   <ion-tab [root]="tab3Root" tabTitle="个人" tabIcon="contacts"></ion-tab>
 </ion-tabs>

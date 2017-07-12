@@ -1,0 +1,15 @@
+.application{
+    box-sizing: border-box;
+    ion-grid{
+        padding: 10px;
+        text-align: center;
+        ion-col{
+            .title{
+                margin: 10px 0 ;
+            }
+            img{
+                width: 56px;
+            }
+        }
+    }
+}

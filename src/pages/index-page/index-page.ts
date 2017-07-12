@@ -14,8 +14,6 @@ export class IndexPage{
   goToSlide() {
     this.slides.slideTo(2, 500);
   }
-
-  isLogin:boolean = true;
   
   autoPlay(){
     this.slides.startAutoplay();
