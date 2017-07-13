@@ -46,14 +46,14 @@
     <div class="tabs">
         <div class="tabsGuoup"  *ngIf="!isLogin">
             <ul class="tabsList">
-                <li [ngClass]="{'active':panel.news}" (click)="switchPanel('news')">新闻要闻</li>
-                <li [ngClass]="{'active':panel.data}" (click)="switchPanel('data')">海关数据统计</li>
+                <li [ngClass]="{'active':panel.news}" (click)="switchPanel('news',1)">新闻要闻</li>
+                <li [ngClass]="{'active':panel.data}" (click)="switchPanel('data',1)">海关数据统计</li>
             </ul>
             <div class="panel" *ngIf="panel.news">
                 <ion-list>
                     <ion-item>
                         <ion-thumbnail item-start>
-                        <img src="img/thumbnail-totoro.png">
+                        <img src="img/tou.png">
                         </ion-thumbnail>
                         <h2>My Neighbor Totoro</h2>
                         <p>Hayao Miyazaki • 1988</p>
@@ -97,9 +97,49 @@
         </div>
         <div class="tabsGuoup" *ngIf="isLogin">
             <ul class="tabsList">
-                <li>通知公告</li>
-                <li>代办事项</li>
+                <li [ngClass]="{'active':panel2.notice}" (click)="switchPanel('notice',2)">通知公告</li>
+                <li [ngClass]="{'active':panel2.toBeDone}" (click)="switchPanel('toBeDone',2)">代办事项</li>
             </ul>
+            <div class="panel" *ngIf="panel2.notice">
+                <ion-list>
+                    <ion-item>
+                        <h2>通知通知</h2>
+                        <p><span>1111</span><span>2222</span></p>
+                    </ion-item>
+                    <ion-item>
+                        <h2>通知通知</h2>
+                        <p><span>1111</span><span>2222</span></p>
+                    </ion-item>
+                    <ion-item>
+                        <h2>通知通知</h2>
+                        <p><span>1111</span><span>2222</span></p>
+                    </ion-item>
+                    <ion-item>
+                        <h2>通知通知</h2>
+                        <p><span>1111</span><span>2222</span></p>
+                    </ion-item>
+                </ion-list>
+            </div>
+            <div class="panel" *ngIf="panel2.toBeDone">
+                <ion-list>
+                    <ion-item>
+                        <h2>代办代办</h2>
+                        <p><span>3333</span><span>4444</span></p>
+                    </ion-item>
+                    <ion-item>
+                        <h2>代办代办</h2>
+                        <p><span>3333</span><span>4444</span></p>
+                    </ion-item>
+                    <ion-item>
+                        <h2>代办代办</h2>
+                        <p><span>3333</span><span>4444</span></p>
+                    </ion-item>
+                    <ion-item>
+                        <h2>代办代办</h2>
+                        <p><span>3333</span><span>4444</span></p>
+                    </ion-item>
+                </ion-list>
+            </div>
         </div>
         
     </div>

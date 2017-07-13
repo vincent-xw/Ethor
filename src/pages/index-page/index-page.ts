@@ -18,25 +18,40 @@ export class IndexPage{
   autoPlay(){
     this.slides.startAutoplay();
   }
-  private slidesArray = [
+  slidesArray = [
         {"img":"./img/slide1.jpeg"},
         {"img":"./img/slide2.jpeg"},
         {"img":"./img/slide3.jpeg"},
         {"img":"./img/slide4.jpeg"}
     ];
-  private panel = {
+  isLogin = true;
+  panel = {
     "news":true,
     "data":false
   };
-
-  switchPanel(str){
-    if(str == "news"){
-      this.panel.news = true;
-      this.panel.data = false;
+  panel2 = {
+    "notice":true,
+    "toBeDone":false
+  };
+  switchPanel(str,panelId){
+    if(panelId == 1){
+      if(str == "news"){
+        this.panel.news = true;
+        this.panel.data = false;
+      }else{
+        this.panel.news = false;
+        this.panel.data = true;
+      }
     }else{
-      this.panel.news = false;
-      this.panel.data = true;
+      if(str == "notice"){
+        this.panel2.notice = true;
+        this.panel2.toBeDone = false;
+      }else{
+        this.panel2.notice = false;
+        this.panel2.toBeDone = true;
+      }
     }
+    
   }
   constructor() {
      

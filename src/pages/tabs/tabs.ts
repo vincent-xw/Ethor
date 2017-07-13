@@ -1,4 +1,4 @@
-import { Component,Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { IndexPage } from '../index-page/index-page';
 import { personalPage } from '../personal/personal';
