@@ -1,5 +1,6 @@
 import { Component,ViewChild } from '@angular/core';
-import { Slides } from 'ionic-angular';
+import { Slides, NavController, NavParams } from 'ionic-angular';
+import {NewsList} from './news/news-list/news-list';
 
 @Component({
     selector: 'index-page',
@@ -53,7 +54,14 @@ export class IndexPage{
     }
     
   }
-  constructor() {
+  goToOtherPage(str) {
+      if(str == "newsList"){
+        this.nav.push(NewsList);
+      }
+  };
+  constructor(public nav: NavController) {
+
      
+
   }
 }

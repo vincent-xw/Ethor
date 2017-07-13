@@ -6,6 +6,9 @@ import { MyApp } from './app.component';
 import { applicationPage } from '../pages/application/application';
 import { personalPage } from '../pages/personal/personal';
 import { IndexPage } from '../pages/index-page/index-page';
+import { NewsList } from '../pages/index-page/news/news-list/news-list';
+import { NewsDetail } from '../pages/index-page/news/news-detail/news-detail';
+
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -19,7 +22,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     applicationPage,
     personalPage,
     IndexPage,
-    TabsPage
+    TabsPage,
+    NewsList,
+    NewsDetail
   ],
   imports: [
     BrowserModule,
@@ -31,7 +36,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     applicationPage,
     personalPage,
     IndexPage,
-    TabsPage
+    TabsPage,
+    NewsList,
+    NewsDetail
   ],
   providers: [
     StatusBar,

@@ -1,12 +1,68 @@
 <ion-header>
     <ion-navbar>
-        <button ion-button >
-            <ion-icon name="arrow-back"></ion-icon>
-        </button>
+        
         <ion-title>新闻要闻</ion-title>
     </ion-navbar>
 </ion-header>
 
 <ion-content>
     <img class="bg" src="img/per_banner.png" alt="新闻要闻背景">
+    
+    <ion-label class="sub-title">
+        <span>热点新闻</span>
+    </ion-label>
+    <div class="imgListContainer">
+        <div class="imgList">
+            <img src="img/hot.png" alt="">
+        </div>
+        <div class="imgList">
+            <img src="img/hot.png" alt="">
+        </div>
+        <div class="imgList">
+            <img src="img/hot.png" alt="">
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="space"></div>
+    <ion-label class="sub-title">
+        <span>新闻推荐</span>
+    </ion-label>
+    <div class="newsCOntainer">
+        <ion-list>
+            <ion-item (click)="goToDetail(1)">
+                <ion-thumbnail item-start>
+                <img src="img/tou.png">
+                </ion-thumbnail>
+                <h2>My Neighbor Totoro</h2>
+                <p>Hayao Miyazaki • 1988</p>
+                <button ion-button clear item-end>View</button>
+            </ion-item>
+            <ion-item (click)="goToDetail(1)">
+                <ion-thumbnail item-start>
+                <img src="img/tou.png">
+                </ion-thumbnail>
+                <h2>My Neighbor Totoro</h2>
+                <p>Hayao Miyazaki • 1988</p>
+                <button ion-button clear item-end>View</button>
+            </ion-item>
+            <ion-item (click)="goToDetail(1)">
+                <ion-thumbnail item-start>
+                <img src="img/tou.png">
+                </ion-thumbnail>
+                <h2>My Neighbor Totoro</h2>
+                <p>Hayao Miyazaki • 1988</p>
+                <button ion-button clear item-end>View</button>
+            </ion-item>
+            <ion-item (click)="goToDetail(1)">
+                <ion-thumbnail item-start>
+                <img src="img/tou.png">
+                </ion-thumbnail>
+                <h2>My Neighbor Totoro</h2>
+                <p>Hayao Miyazaki • 1988</p>
+                <button ion-button clear item-end>View</button>
+            </ion-item>
+            
+        </ion-list>
+    </div>
+    
 </ion-content>
