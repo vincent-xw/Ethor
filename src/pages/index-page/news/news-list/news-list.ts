@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {  NavController } from 'ionic-angular';
+import {  NavController, NavParams } from 'ionic-angular';
 
 import {NewsDetail} from '../news-detail/news-detail';
 @Component({
@@ -9,7 +9,9 @@ import {NewsDetail} from '../news-detail/news-detail';
 export class NewsList{
     
     goToDetail(id) {
-        this.nav.push(NewsDetail);
+        this.nav.push(NewsDetail,{
+            id:id
+        });
     };
     constructor(public nav: NavController) {
         
