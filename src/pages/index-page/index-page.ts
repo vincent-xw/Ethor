@@ -1,5 +1,5 @@
 import { Component,ViewChild } from '@angular/core';
-import { Slides, NavController, NavParams } from 'ionic-angular';
+import { Slides, NavController } from 'ionic-angular';
 import {NewsList} from './news/news-list/news-list';
 
 @Component({
