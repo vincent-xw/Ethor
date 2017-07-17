@@ -17,7 +17,7 @@
     </div>
     <div class="iocnMenu" *ngIf="isLogin">
         <ul class="menuList">
-            <li>
+            <li (click)="goToOtherPage('activationCode')">
                 <div>
                     <img src="img/key.png" alt="">
                 </div>
@@ -33,7 +33,7 @@
                     <span>新闻要闻</span>
                 </div>
             </li>
-            <li>
+            <li (click)="goToOtherPage('salary')">
                 <div>
                     <img src="img/salary.png" alt="">
                 </div>

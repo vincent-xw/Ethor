@@ -8,6 +8,9 @@ import { personalPage } from '../pages/personal/personal';
 import { IndexPage } from '../pages/index-page/index-page';
 import { NewsList } from '../pages/index-page/news/news-list/news-list';
 import { NewsDetail } from '../pages/index-page/news/news-detail/news-detail';
+import { ActivationList } from '../pages/index-page/activation-code/activation-list/activation-list';
+import { ActivationPage } from '../pages/index-page/activation-code/activation-page/activation-page';
+import { Salary } from '../pages/index-page/salary/salary';
 
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -24,7 +27,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     IndexPage,
     TabsPage,
     NewsList,
-    NewsDetail
+    NewsDetail,
+    ActivationList,
+    ActivationPage,
+    Salary
   ],
   imports: [
     BrowserModule,
@@ -38,7 +44,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     IndexPage,
     TabsPage,
     NewsList,
-    NewsDetail
+    NewsDetail,
+    ActivationList,
+    ActivationPage,
+    Salary
   ],
   providers: [
     StatusBar,

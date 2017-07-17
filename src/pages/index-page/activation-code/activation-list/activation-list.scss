@@ -1,0 +1,69 @@
+.activation{
+    .tabs{
+        .tabList{
+            padding: 0 15px;
+            margin-top: 15px;
+            border-bottom: 1px solid #D7D7D7;
+            list-style: none;
+            font-size: 0;
+            box-sizing: border-box;
+            li{
+                font-size: 1.4rem;
+                display: inline-block;
+                width: 33.333%;
+                text-align: center;
+                box-sizing: border-box;
+            }
+            span{
+                padding: 7px;
+                display: inline-block;
+            }
+            li.active span{
+                border-bottom: 2px solid #098DCA;
+                padding: 7px 10px;
+                color: #098DCA;
+                display: inline-block;
+            }
+        }
+    }
+    .space{
+        height: 11px;
+        background: #F2F2F2;
+    }
+    .tableContainer{
+        padding: 16px 19px;
+        .table{
+            width: 100%;
+            text-align: center;
+            vertical-align: middle;
+            thead{
+                tr{
+                    background: #F6F6F6;
+                    border-top: 1px solid #BFBFBF;
+                    th{
+                        border-right: 1px solid #BFBFBF;
+                        padding: 12px 0;
+                    }
+                    th:first-child{
+                        border-left: 1px solid #BFBFBF;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    border-top: 1px solid #BFBFBF;
+                    td{
+                        border-right: 1px solid #BFBFBF;
+                        padding: 12px 0;
+                    }
+                    td:first-child{
+                        border-left: 1px solid #BFBFBF;
+                    }
+                }
+                tr:last-child{
+                    border-bottom: 1px solid #BFBFBF;
+                }
+            }
+        }
+    }
+}

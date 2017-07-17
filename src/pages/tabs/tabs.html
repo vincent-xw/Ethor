@@ -1,4 +1,4 @@
-<ion-tabs>
+<ion-tabs #menuTabs (ionChange) = "test()">
   <ion-tab [root]="tab1Root" tabTitle="首页" tabIcon="home" ></ion-tab>
   <ion-tab [root]="tab2Root" tabTitle="应用" tabIcon="information-circle" show="{{isLogin}}"></ion-tab>
   <ion-tab [root]="tab3Root" tabTitle="个人" tabIcon="contacts"></ion-tab>

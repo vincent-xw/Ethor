@@ -2,11 +2,104 @@
     <ion-navbar>
         
         <ion-title>激活码申请列表</ion-title>
-        <ion-icon right name="add"></ion-icon>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="applyCode()">
+                <ion-icon name="add"></ion-icon>
+            </button>
+        </ion-buttons>
     </ion-navbar>
 </ion-header>
 
 <ion-content>
-    
+    <div class="activation">
+        <div class="tabs">
+            <ul class="tabList">
+                <li [ngClass]="{'active':panel1}" (click)="switchPanel(1)"><span>我的代办</span></li>
+                <li [ngClass]="{'active':panel2}" (click)="switchPanel(2)"><span>我的申请</span></li>
+                <li [ngClass]="{'active':panel3}" (click)="switchPanel(3)"><span>我的已办</span></li>
+            </ul>
+        </div>
+        <div class="space"></div>
+        <div class="tableContainer">
+            <table class="table" *ngIf="panel1">
+                <thead>
+                    <tr>
+                        <th>标题</th>
+                        <th>申请人</th>
+                        <th>时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A公司申请</td>
+                        <td>李雷</td>
+                        <td>2017年07月14日</td>
+                    </tr>
+                    <tr>
+                        <td>B公司申请</td>
+                        <td>Peter</td>
+                        <td>2017年07月14日</td>
+                    </tr>
+                    <tr>
+                        <td>B公司申请</td>
+                        <td>韩梅梅</td>
+                        <td>2017年07月14日</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table" *ngIf="panel2">
+                <thead>
+                    <tr>
+                        <th>标题</th>
+                        <th>申请人</th>
+                        <th>时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A公司申请</td>
+                        <td>雷雷</td>
+                        <td>2017年07月14日</td>
+                    </tr>
+                    <tr>
+                        <td>B公司申请</td>
+                        <td>Peter</td>
+                        <td>2017年07月14日</td>
+                    </tr>
+                    <tr>
+                        <td>B公司申请</td>
+                        <td>韩梅梅</td>
+                        <td>2017年07月14日</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table" *ngIf="panel3">
+                <thead>
+                    <tr>
+                        <th>标题</th>
+                        <th>申请人</th>
+                        <th>时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A公司申请</td>
+                        <td>李李</td>
+                        <td>2017年07月14日</td>
+                    </tr>
+                    <tr>
+                        <td>B公司申请</td>
+                        <td>Peter</td>
+                        <td>2017年07月14日</td>
+                    </tr>
+                    <tr>
+                        <td>B公司申请</td>
+                        <td>韩梅梅</td>
+                        <td>2017年07月14日</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
     
 </ion-content>

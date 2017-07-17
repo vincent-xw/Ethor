@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild } from '@angular/core';
+
+import {  NavController, Tabs } from 'ionic-angular';
 
 import { IndexPage } from '../index-page/index-page';
 import { personalPage } from '../personal/personal';
@@ -10,7 +12,7 @@ import { applicationPage } from '../application/application';
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
-
+  @ViewChild('menuTabs') tabRef: Tabs;
   // @Input() isLogin:boolean;
   isLogin = true;
 
@@ -19,10 +21,13 @@ export class TabsPage {
   tab1Root: any = IndexPage;
   tab2Root: any = applicationPage;
   tab3Root: any = personalPage;
-
-
-
-  constructor() {
-
+  
+  test(){
+    console.log(1);
   }
+  
+  constructor(public nav: NavController) {
+    // console.log(this.tabs.select);
+  }
+  
 }
