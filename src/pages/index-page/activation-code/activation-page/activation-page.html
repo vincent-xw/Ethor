@@ -7,6 +7,81 @@
 </ion-header>
 
 <ion-content>
-
+    <div class="applyContainer">
+        <ion-list>
+            <ion-item>
+                <ion-label>企业名称</ion-label>
+                <ion-input type="text" value=""></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>企业联系人</ion-label>
+                <ion-input type="text" value=""></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>联系电话</ion-label>
+                <ion-input type="text" value=""></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>操作类型</ion-label>
+                <ion-select  interface="popover">
+                    <ion-option value="f">新增</ion-option>
+                    <ion-option value="a">撤销</ion-option>
+                    <ion-option value="m">客户端定制变更</ion-option>
+                </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label>申请时间</ion-label>
+                <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" ></ion-datetime>
+            </ion-item>
+            <ion-item>
+                <ion-label>客户端类型</ion-label>
+                <ion-select >
+                    <ion-option value="f">易速</ion-option>
+                    <ion-option value="a">APP</ion-option>
+                    <ion-option value="m">客户端定制变更</ion-option>
+                </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label>数量</ion-label>
+                <ion-input type="text" value=""></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>序号</ion-label>
+                <ion-input type="text" value=""></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>操作员</ion-label>
+                <ion-input type="text" value=""></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>选择流程</ion-label>
+                <ion-select >
+                    <ion-option value="f">易速</ion-option>
+                    <ion-option value="a">APP</ion-option>
+                    <ion-option value="m">客户端定制变更</ion-option>
+                </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label>审批人</ion-label>
+                <ion-select >
+                    <ion-option value="f">易速</ion-option>
+                    <ion-option value="a">APP</ion-option>
+                    <ion-option value="m">客户端定制变更</ion-option>
+                </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label>审批意见</ion-label>
+                <ion-input type="text" value=""></ion-input>
+            </ion-item>
+            <ion-item>
+                <button ion-button small>审批</button>
+                <button ion-button small>撤回</button>
+                <button ion-button small>跟踪</button>
+                <button ion-button small>退回</button>
+                <button ion-button small>保存</button>
+            </ion-item>
+        </ion-list>
+    </div>
+    
     
 </ion-content>
