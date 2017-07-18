@@ -29,7 +29,15 @@
     </ion-label>
     <div class="newsCOntainer">
         <ion-list>
-            <ion-item (click)="goToDetail('222')">
+            <ion-item *ngFor="let new of news" (click)="goToDetail('222')">
+                <ion-thumbnail item-start>
+                <img src="img/tou.png">
+                </ion-thumbnail>
+                <h2>{{new.title}}</h2>
+                <p>{{new.content}}</p>
+                <button ion-button clear item-end>View</button>
+            </ion-item>
+            <!-- <ion-item (click)="goToDetail('222')">
                 <ion-thumbnail item-start>
                 <img src="img/tou.png">
                 </ion-thumbnail>
@@ -60,7 +68,7 @@
                 <h2>My Neighbor Totoro</h2>
                 <p>Hayao Miyazaki • 1988</p>
                 <button ion-button clear item-end>View</button>
-            </ion-item>
+            </ion-item> -->
             
         </ion-list>
     </div>
